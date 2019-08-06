@@ -1,0 +1,41 @@
+/*
+ * Page Structure
+ */
+
+.cover-container {
+  max-width: 48em;
+}
+/*
+ * header
+ */
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+/*
+ * Main Content
+ */
+
+.cover {
+  padding: 1rem;
+}
+
+@media (min-width: 720px) {
+  .cover {
+    /* center text */
+  }
+}
+
+/*
+ * Footer
+ */
+footer {
+  padding-top: 4rem;
+  font-size: 0.8rem;
+}
