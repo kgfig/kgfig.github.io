@@ -6,9 +6,10 @@
   padding: 1rem;
 }
 
-@media (min-width: 720px) {
-  .cover {
-    /* center text */
+@media (max-width: 508px) {
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 

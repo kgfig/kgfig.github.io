@@ -146,6 +146,15 @@ body {
   float: right;
 }
 
+@media (max-width: 508px) {
+  .masthead-brand,
+  .nav-masthead {
+    width: 100%;
+    margin-bottom: 1rem;
+    float: none;
+  }
+}
+
 .nav-link {
   padding: .25rem 0;
   background-color: transparent;
