@@ -1,25 +1,4 @@
 /*
- * Page Structure
- */
-
- .cover-container {
-  max-width: 48em;
-}
-
-/*
- * header
- */
-
- @media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
-/*
  * Content
  */
 

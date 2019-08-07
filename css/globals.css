@@ -109,17 +109,23 @@ a:hover {
   * Base structure
   */
  
- html,
- body {
-   height: 100%;
-   background-color: #f7f5f2;
- }
- 
- body {
-   display: -ms-flexbox;
-   display: flex;
-   color: #555;
- }
+html,
+body {
+  height: 100%;
+  background-color: #f7f5f2;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #555;
+}
+
+.cover-container {
+  max-width: 48em;
+}
+
+
  
  /*
  * Header
@@ -130,6 +136,14 @@ a:hover {
 
 .masthead-brand {
   margin-bottom: 0;
+}
+
+.masthead-brand {
+  float: left;
+}
+
+.nav-masthead {
+  float: right;
 }
 
 .nav-link {
