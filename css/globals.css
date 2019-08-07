@@ -119,6 +119,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #555;
+  font-family: 'Nunito', sans-serif;
 }
 
 .cover-container {
