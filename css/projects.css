@@ -9,6 +9,13 @@
   }
 }
 
+@media (max-width: 655px) {
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
 /*
  * Carousel
  */
