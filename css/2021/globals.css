@@ -40,6 +40,7 @@
 a.btn-secondary,
 a.btn-secondary {
    color: #e89e54;
+   border-color: #e89e54;
 }
 
 a.btn-danger,
@@ -259,4 +260,11 @@ footer >  div:first-child {
 
 footer .text-info {
   font-size: 0.8rem;
+}
+
+footer .el-credit {
+  position: absolute;
+  right: 0;
+  margin-right: 2em;
+  color: #d0d0d0;
 }
