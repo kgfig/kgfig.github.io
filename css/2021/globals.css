@@ -1,5 +1,5 @@
 /*
- * Globals/Override default
+ * Globals/Override defaults
  */
 
  a:hover,
@@ -156,6 +156,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  color: #3f3f3f;
 }
 
 h1 {
@@ -211,9 +212,7 @@ header {
 } */
 
 
-/*
- Nav
-*/
+/* Nav */
 
 .nav-icons {
    display: flex;
@@ -242,7 +241,7 @@ header {
 }
 
 .lead .btn {
-  margin: 1.25em 0 0;
+  margin: 1.5em 0 0;
 }
 
 
