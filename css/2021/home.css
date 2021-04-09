@@ -10,20 +10,9 @@ main {
 }
 
 main img {
-    max-height: 300px;
+  max-height: 300px;
 }
 
-.lead {
-    margin-left: 2em;
-}
-
-.lead h2 {
-    margin-top: 0.7em;
-}
-
-.lead .btn {
-    margin: 1.25em 0 0;
-}
 
 
  /* .cover {
@@ -36,18 +25,3 @@ main img {
       margin-bottom: 1rem;
     }
   } */
-  
-/*
-* Footer
-*/
-footer {
-    padding: 1em 4em;
-} 
-
-footer >  div:first-child {
-    flex: 1;
-}
-
-footer .text-info {
-    font-size: 0.8rem;
-}

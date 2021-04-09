@@ -37,20 +37,26 @@
   padding: 0.5em 2em;
 }
 
-.btn-secondary {
+a.btn-secondary,
+a.btn-secondary {
    color: #e89e54;
 }
 
+a.btn-danger,
 .btn-danger {
   color: #ffffff;
 }
 
+a.btn-secondary:hover,
+a.btn-secondary:focus,
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #f5f5f5;
   background: #eeb780;
 }
 
+a.btn-secondary:active,
+a.btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:active,
 .btn-secondary:not(:disabled):not(.disabled).active, 
 .btn-secondary:not(:disabled):not(.disabled):active {
@@ -58,12 +64,17 @@
   background: #e89e54;
 }
 
+a.btn-danger:hover,
+a.btn-danger:focus,
+a.btn-danger:active,
+a.btn-danger:not(:disabled):not(.disabled).active, 
+a.btn-danger:not(:disabled):not(.disabled):active,
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger:not(:disabled):not(.disabled).active, 
 .btn-danger:not(:disabled):not(.disabled):active {
-    color: #e89e54;
+  color: #e89e54;
   background: #f0e5db;
 }
 
@@ -147,6 +158,22 @@ h6 {
   font-weight: 600;
 }
 
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+
 /*
    * Base structure
    */
@@ -157,6 +184,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 body {
@@ -173,8 +202,9 @@ footer {
   width: 70%;
 }
 
-
-/* Common elements */
+header {
+  margin-top: 0.5em;
+}
 
 /* .cover-container {
   max-width: 48em;
@@ -184,10 +214,6 @@ footer {
 /*
  Nav
 */
-
-header {
-  margin-top: 0.5em;
-}
 
 .nav-icons {
    display: flex;
@@ -200,4 +226,38 @@ header {
   margin: 0 0.5em;
   line-height: 2em;
   font-size: 1.25em;
+}
+
+/* Common custom elements */
+
+.lead {
+  margin-left: 2em;
+}
+
+.lead h1,
+.lead h2,
+.lead h3,
+.lead h4 {
+  margin-top: 0.7em;
+}
+
+.lead .btn {
+  margin: 1.25em 0 0;
+}
+
+
+.email-link {
+  cursor: pointer;
+}
+
+footer {
+  padding: 1em 4em;
+} 
+
+footer >  div:first-child {
+  flex: 1;
+}
+
+footer .text-info {
+  font-size: 0.8rem;
 }

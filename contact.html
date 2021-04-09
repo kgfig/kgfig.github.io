@@ -6,73 +6,74 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kathleen Figueroa | Full-stack Software Developer</title>
+    <title>Kathleen Figueroa | Full-stack Software Developer | Django, Javascript Developer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" 
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-          crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/contact.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/vendor/custom-bootstrap.css">
+    <link rel="stylesheet" href="css/2021/globals.css">
+    <link rel="stylesheet" href="css/2021/home.css">
   </head>
-  <body class="text-center">
+  <body class="clearfix d-flex flex-column w-100 h-100" onload="onLoad()">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-          <div class="inner">
-            <h4 class="masthead-brand">
-              <span>Kathleen Figueroa</span>
-            </h4>
-            <nav class="nav nav-masthead justify-content-center">
-              <a class="nav-link" href="index.html">Home</a>
-              <a class="nav-link" href="projects.html">Projects</a>
-              <a class="nav-link active" href="contact.html">Contact</a>
-            </nav>
-          </div>
-        </header>
+    <header class="mb-auto">
+      <nav class="nav">
+        <a class="nav-link nav-brand font-weight-bold" href="index.html">Kathleen Figueroa</a>
+        <a class="nav-link" href="">CV</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="contact.html">Contact</a>
 
-        <main role="main" class="inner cover mb-auto">
-          <h1 class="page-title mb-3">Contact</h1>
-          <h5 class="mb-5">Need help with your app? Get in touch.</h5>
-            <div class="inner">
-              <!-- <a target="_blank" href="https://github.com/kgfig/"><i class="fab fa-github mr-4"></i></a> -->
-              <a target="_blank" href="mailto:kgfig.work@gmail.com"><i class="fa fa-envelope mr-5 icon-contact"></i></a>
-              <a target="_blank" href="https://gitlab.com/kgfig/"><i class="fab fa-gitlab mr-5 icon-contact"></i></a>
-              <a target="_blank" href="https://linkedin.com/in/kathleen-figueroa/"><i class="fab fa-linkedin icon-contact"></i></a>
-            </div>
+        <div class="nav-icons ml-auto">
+          <a class="nav-icon" target="_blank" href="https://linkedin.com/in/kathleen-figueroa/"><i class="fab fa-linkedin" title="LinkedIn Profile"></i></a>
+          <a class="nav-icon" target="_blank" href="https://gitlab.com/kgfig/"><i class="fab fa-gitlab" title="Gitlab repositories"></i></a>
+        </div>
+      </nav>
+    </header>
 
-          <!-- <form class="form-signin">
-            <h5 class="mb-3">Need help with your app? Let's work on it.</h5>
-            <label for="inputName" class="sr-only">Your Name</label>
-            <input type="text" id="inputName" class="form-control" placeholder="Your Name" required autofocus>
+    <main>
+      <div class="lead text-right">
+        <h2>Need help with your app?</h2>
+        <p class="text-info mt-4">Don't hesitate to get in touch<br>through my profile or email.</p>
 
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-
-            <label for="inputMessage" class="sr-only">Let's talk about your project.</label>
-            <textarea type="text" id="inputMessage" class="form-control" placeholder="Let's talk about your project." required></textarea>
-
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
-          </form> -->
-
-        </main>
-
-        <!-- <footer>
-          <div class="inner">
-            <a target="_blank" href="https://github.com/kgfig/"><i class="fab fa-github mr-4"></i></a>
-            <a target="_blank" href="https://gitlab.com/kgfig/"><i class="fab fa-gitlab mr-4"></i></a>
-            <a target="_blank" href="https://linkedin.com/in/kathleen-figueroa/"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </footer> -->
+        <a target="_blank" href="https://linkedin.com/in/kathleen-figueroa/" class="btn btn-secondary">View LinkedIn profile</a>
       </div>
-    
+      <img src="images/contact-rev.png" class="email-link" onclick="openEmailLink()" title="Click to send an email">
+    </main>
+
+    <footer class="mt-auto d-flex flex-row">
+      <div class="text-info text-center">
+        &copy; <span id="copyright-year"></span>
+      </div>
+      <!--<span class="text-warning">Original illustrations by drawkit.io</span> -->
+    </footer>
+
     
     <script src="https://kit.fontawesome.com/7379c566a8.js"></script>
+    <script>
+      const email_name = "kgfig.work";
+      const domain = "gmail";
+
+      const onLoad = function () {
+        showCurrentYear();
+      };
+
+      const showCurrentYear = function() {
+        const $year = document.getElementById("copyright-year");
+        $year.innerHTML = getCurrentYear();
+      };
+
+      const getCurrentYear = function() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      };
+
+      const openEmailLink = function() {
+        console.log(`mailto:${email_name}@${domain}.com`);
+        location.href = `mailto:${email_name}@${domain}.com`;
+      }
+    </script>
   </body>
 </html>

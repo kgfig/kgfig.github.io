@@ -21,7 +21,7 @@
 
     <header class="mb-auto">
       <nav class="nav">
-        <a class="nav-link nav-brand font-weight-bold" href="">Kathleen Figueroa</a>
+        <a class="nav-link nav-brand font-weight-bold" href="index.html">Kathleen Figueroa</a>
         <a class="nav-link" href="">CV</a>
         <a class="nav-link" href="projects.html">Projects</a>
         <a class="nav-link" href="contact.html">Contact</a>
@@ -36,10 +36,10 @@
     <main>
       <img src="images/home-mono.png">
       <div class="lead">
-        <h2>Hi! I build apps for learners.</h2>
+        <h1>Hi! I build apps for learners.</h1>
         <p class="text-info mt-4">I'm Kathleen Figueroa, a full-stack software developer<br>with a background in research and educational apps.</p>
 
-        <a target="_blank" href="https://app.box.com/s/ngyc4hiqv7moiodsdz57udr3wh3lf9d2" class="btn btn-lg btn-danger">Download CV</a>
+        <a target="_blank" href="https://app.box.com/s/ngyc4hiqv7moiodsdz57udr3wh3lf9d2" class="btn btn-danger">Download CV</a>
       </div>
     </main>
 
@@ -54,6 +54,10 @@
     <script src="https://kit.fontawesome.com/7379c566a8.js"></script>
     <script>
       const onLoad = function () {
+        showCurrentYear();
+      };
+
+      const showCurrentYear = function() {
         const $year = document.getElementById("copyright-year");
         $year.innerHTML = getCurrentYear();
       };

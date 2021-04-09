@@ -6,299 +6,91 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kathleen Figueroa | Full-stack Software Developer</title>
+    <title>Kathleen Figueroa | Full-stack Software Developer | Django, Javascript Developer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" 
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-          crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/vendor/custom-bootstrap.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/2021/globals.css">
+    <link rel="stylesheet" href="css/2021/projects.css">
   </head>
-  <body class="text-center">
+  <body class="clearfix d-flex flex-column w-100 h-100" onload="onLoad()">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-          <div class="inner">
-            <h4 class="masthead-brand">Kathleen Figueroa</h4>
-            <nav class="nav nav-masthead justify-content-center">
-              <a class="nav-link" href="index.html">Home</a>
-              <a class="nav-link active" href="projects.html">Projects</a>
-              <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
-          </div>
-        </header>
-      
-        <main role="main" class="inner cover my-auto">
-          <h1 class="page-title">Recent Projects</h1>
+    <header class="mb-auto">
+      <nav class="nav">
+        <a class="nav-link nav-brand font-weight-bold" href="index.html">Kathleen Figueroa</a>
+        <a class="nav-link" href="">CV</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="contact.html">Contact</a>
 
-          <div id="projectCarousel" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#projectCarousel" data-slide-to="1"></li>
-                <li data-target="#projectCarousel" data-slide-to="2"></li>
-                <li data-target="#projectCarousel" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="carousel-image" src="images/tocky_carousel.jpg" role="img">
-                  <div class="container">
-                    <div class="carousel-caption text-left">
-                      <h1>Tocky Talk</h1>
-                      <p>A native Android app that helps improve the communication skills of job seekers and new hires</p>
-                      <p>
-                        <a class="btn btn-lg btn-action mr-2" role="button" data-target="#modalTockyTalk" data-toggle="modal">Learn More</a>
-                        <a class="btn btn-lg btn-action-secondary" target="_blank" href="https://play.google.com/store/apps/details?id=ph.edu.upd.ticktocktechtalk" role="button">View in Play Store</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img class="carousel-image" src="images/complit_click_carousel.jpg" role="img">
-                  <div class="container">
-                    <div class="carousel-caption text-left">
-                      <h1>CLICK</h1>
-                      <p>An educational app that provides training in using word processing, spreadsheet and presentation applications</p>
-                      <p><a class="btn btn-lg btn-action" href="#" role="button" data-target="#modalClick" data-toggle="modal">Learn More</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img class="carousel-image" src="images/impact_ctaps_carousel.jpg" role="img">
-                  <div class="container">
-                    <div class="carousel-caption text-left">
-                      <h1>IMPACT</h1>
-                      <p>An educational visual novel game that teaches critical thinking and problem solving skills in a professional setting</p>
-                      <p><a class="btn btn-lg btn-action" href="#" role="button" data-target="#modalImpact" data-toggle="modal">Learn More</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img class="carousel-image" src="images/uhcict_carousel.png" role="img">
-                  <div class="container">
-                    <div class="carousel-caption text-left">
-                      <h1>UHC with ICT</h1>
-                      <p>An event management web app for the Asian Conference on Universal Health Coverage with ICT in 2014</p>
-                      <p><a class="btn btn-lg btn-action" href="#" role="button" data-target="#modalUhc" data-toggle="modal">Learn More</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+        <div class="nav-icons ml-auto">
+          <a class="nav-icon" target="_blank" href="https://linkedin.com/in/kathleen-figueroa/"><i class="fab fa-linkedin" title="LinkedIn Profile"></i></a>
+          <a class="nav-icon" target="_blank" href="https://gitlab.com/kgfig/"><i class="fab fa-gitlab" title="Gitlab repositories"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Latest Projects</h1>
+      <div class="container">
+        <div class="el-thumbnails row">
+          <div class="col-md-4" onmouseover="showLink(this)" onmouseout="hideLink(this)">
+            <img src="images/projects/Marayum thumbnail.png" class="img-fluid" title="Project Marayum: Community-built online dictionaries" alt="Screenshot of Marayum website at the Hiligaynon-English dictionary page and showing a popup for selecting a dictionary">
+            <div class="el-hover-overlay">
+              <a href="project-marayum.htm" class="btn btn-danger">Learn about Project Marayum</a>
             </div>
-        </main>
+          </div>
+          <div class="col-md-4" onmouseover="showLink(this)" onmouseout="hideLink(this)">
+            <img src="images/projects/Tocky Talk thumbnail.jpg" class="img-fluid" title="Tocky Talk: Improve your English skills" alt="Screenshot of the onboarding process of Tocky Talk Android app where the user is asked for the skills they want to improve">
+            <div class="el-hover-overlay">
+              <a href="tocky-talk.htm" class="btn btn-danger">Learn about Tocky Talk</a>
+            </div>
+          </div>
+          <div class="col-md-4" onmouseover="showLink(this)" onmouseout="hideLink(this)">
+            <img src="images/projects/CLICK thumbnail.jpg" class="img-fluid" title="CLICK: Computer Literacy Core Knowledge" alt="Screenshot of CLICK app on the Menu screen">
+            <div class="el-hover-overlay">
+              <a href="click-and-impact.htm" class="btn btn-danger">Learn about CLiCK and IMPaCT</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </main>
+
+    <footer class="mt-auto d-flex flex-row">
+      <div class="text-info text-center">
+        &copy; <span id="copyright-year"></span>
+      </div>
+      <!--<span class="text-warning">Original illustrations by drawkit.io</span> -->
+    </footer>
+
     
-    <!-- Modal -->
-    <div class="modal fade" id="modalTockyTalk" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content text-left">
-          <div class="modal-header">
-            <h2 class="modal-title">Tocky Talk</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Tocky Talk is a native Android application developed using Android Studio.
-              It contains learning modules on topics such as job interview, presentation and reading comprehension.
-            </p>
-            <h4>
-              Features
-            </h4>
-            <ul>
-              <li>Video lessons</li>
-              <li>Mindfulness exercises</li>
-              <li>Recorded practice interview activities</li>
-              <li>Multiple choice-type quizzes</li>
-              <li>Fill-in-the-blanks quizzes</li>
-              <li>Gamification system with badges, coins and items</li>
-            </ul>
-            <h4>Tech Stack</h4>
-            <div class="d-flex flex-row justify-content-center">
-              <div class="px-2">
-                Android
-              </div>
-              <div class="px-2">
-                Java
-              </div>
-              <div class="px-2">
-                Android Studio
-                </div>
-              <div class="px-2">
-                SQLite
-              </div>
-              <div class="px-2">
-                Django
-              </div>
-            </div>
-            <div class="modal-footer">
-              <a type="button" class="btn btn-secondary mx-auto" target="_blank" href="https://play.google.com/store/apps/details?id=ph.edu.upd.ticktocktechtalk">View in Play Store</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script src="https://kit.fontawesome.com/7379c566a8.js"></script>
+    <script>
+      const onLoad = function () {
+        showCurrentYear();
+      };
 
-    <div class="modal fade" id="modalClick" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content text-left">
-            <div class="modal-header">
-              <h2 class="modal-title">CLICK</h2>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                CLICK (Computer Literacy Core Knowledge) is a standalone desktop application developed using LibGDX and Eclipse IDE.
-                This app is designed to teach computer literacy to junior and senior high school students in the K-12 curriculum.
-              </p>
-              <div class="inner">
-                <h4>Features</h4>
-                <ul>
-                  <li>Comics-type storytelling</li>
-                  <li>Word processing activities</li>
-                  <li>Multiple choice activities</li>
-                  <li>Memory Game</li>
-                  <li>Keyboard practice activities</li>
-                  <li>Gamification system with hints and coins</li>
-                </ul>
-              </div>
-              <div class="inner mb-4">
-                <h4>Tech Stack</h4>
-                <div class="d-flex flex-row justify-content-center">
-                  <div class="px-2">
-                    LibGDX
-                  </div>
-                  <div class="px-2">
-                    Java
-                  </div>
-                  <div class="px-2">
-                    SQLite
-                  </div>
-                  <div class="px-2">
-                    Apache POI
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      const showCurrentYear = function() {
+        const $year = document.getElementById("copyright-year");
+        $year.innerHTML = getCurrentYear();
+      };
 
-      <div class="modal fade" id="modalImpact" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content text-left">
-              <div class="modal-header">
-                <h2 class="modal-title">IMPACT</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="inner mb-4">
-                  <p>
-                    IMPACT (Introductory Modules on Problem Solving and Critical Thinking) is an educational desktop application
-                    developed using LibGDX and Eclipse IDE.
+      const getCurrentYear = function() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      };
 
-                    It was designed as a visual novel game where the user is a newly hired fresh graduate
-                    who is just learning the ropes in his new job.
-                  </p>
-                  <div class="inner">
-                    <h4>Features</h4>
-                    <ul>
-                      <li>Visual novel storytelling</li>
-                      <li>Minigames</li>
-                      <li>Tasks</li>
-                      <li>Assessment</li>
-                    </ul>
-                  </div>
-                  <h4>Tech Stack</h4>
-                  <div class="d-flex flex-row justify-content-center">
-                    <div class="px-2">
-                      LibGDX
-                    </div>
-                    <div class="px-2">
-                      Java
-                    </div>
-                    <div class="px-2">
-                      SQLite
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      const showLink = function (el) {
+        el.querySelector(".el-hover-overlay").style.display = "block";
+      };
 
-
-        <div class="modal fade" id="modalUhc" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content text-left">
-                <div class="modal-header">
-                  <h2 class="modal-title">Universal Health Coverage with ICT Conference 2014</h2>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    UHC with ICT is an event management web app for the Asian Conference led by AeHIN and ADB in 2014.
-                  </p>
-                  <div class="inner">
-                    <h4>Features</h4>
-                    <ul>
-                      <li>Daily Events Management</li>
-                      <li>Speakers List Management</li>
-                      <li>Sponsors List Management</li>
-                      <li>Ask a Speaker</li>
-                      <li>News</li>
-                    </ul>
-                  </div>
-                  <h4>Tech Stack</h4>
-                  <div class="d-flex flex-row justify-content-center">
-                    <div class="px-2">
-                      Wordpress
-                    </div>
-                    <div class="px-2">
-                      PHP
-                    </div>
-                    <div class="px-2">
-                      MySQL
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"
-            async defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"
-            async defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
-            crossorigin="anonymous"
-            async defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" 
-            crossorigin="anonymous"></script>
+      const hideLink = function (el) {
+        el.querySelector(".el-hover-overlay").style.display = "none";
+      };
+    </script>
   </body>
 </html>
