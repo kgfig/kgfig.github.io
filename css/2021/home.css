@@ -1,0 +1,53 @@
+/*
+ * Main Content
+ */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+}
+
+main img {
+    max-height: 300px;
+}
+
+.lead {
+    margin-left: 2em;
+}
+
+.lead h2 {
+    margin-top: 0.7em;
+}
+
+.lead .btn {
+    margin: 1.25em 0 0;
+}
+
+
+ /* .cover {
+    padding: 1rem;
+  }
+  
+  @media (max-width: 508px) {
+    .btn {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  } */
+  
+/*
+* Footer
+*/
+footer {
+    padding: 1em 4em;
+} 
+
+footer >  div:first-child {
+    flex: 1;
+}
+
+footer .text-info {
+    font-size: 0.8rem;
+}

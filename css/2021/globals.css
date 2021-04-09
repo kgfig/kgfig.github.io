@@ -1,0 +1,203 @@
+/*
+ * Globals/Override default
+ */
+
+ a:hover,
+ a:active {
+   background: #f0e5db;
+   color: #e89e54;
+ }
+ 
+ a.nav-link {
+   padding: 0.5em 1.5em;
+   margin: 0.5em;
+ }
+ 
+ a.nav-link.nav-brand,
+ a.nav-link.nav-brand:hover,
+ a.nav-link.nav-brand:focus,
+ a.nav-link.nav-brand:active {
+   color: #cc7621;
+   background: none;
+ }
+ 
+ a.nav-icon:hover,
+ a.nav-icon:active {
+   background: none;
+   color: #cc7621;
+ }
+ 
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:visited {
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0.5em 2em;
+}
+
+.btn-secondary {
+   color: #e89e54;
+}
+
+.btn-danger {
+  color: #ffffff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #f5f5f5;
+  background: #eeb780;
+}
+
+.btn-secondary:active,
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active {
+  color: #f5f5f5;
+  background: #e89e54;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger:not(:disabled):not(.disabled).active, 
+.btn-danger:not(:disabled):not(.disabled):active {
+    color: #e89e54;
+  background: #f0e5db;
+}
+
+.text-info {
+  font-size: 1.15rem;
+}
+
+ /*
+ .btn-primary:hover,
+ .btn-primary:focus,
+ .btn-primary:active,
+ .btn-primary:not(:disabled):not(.disabled).active, 
+ .btn-primary:not(:disabled):not(.disabled):active,
+ .btn-secondary:hover,
+ .btn-secondary:focus,
+ .btn-secondary:active,
+ .btn-secondary:not(:disabled):not(.disabled).active, 
+ .btn-secondary:not(:disabled):not(.disabled):active {
+   color: #f8f8f8;
+   background-color: #df8235;
+   border-color: transparent;
+ }
+ 
+ .btn-secondary {
+   color: #df8235;
+   background-color: transparent;
+   border: .05rem solid #df8235;
+ } */
+
+/* .btn-secondary:hover,
+ .btn-secondary:focus,
+ .btn-secondary:active,
+ .btn-secondary:not(:disabled):not(.disabled).active, 
+ .btn-secondary:not(:disabled):not(.disabled):active {
+   color: #555;
+   background-color: transparent;
+   border-color: #555;
+ } */
+
+/* .btn-action {
+   color: #f8f8f8;
+   background-color: #df8235;
+   border: .05rem solid #df8235;
+   outline: none;
+ }
+ 
+ .btn-action-secondary {
+   color: #f8f8f8;
+   background-color: #888;
+   border: .05rem solid #888;
+ }
+ 
+ .btn-action:hover,
+ .btn-action:focus,
+ .btn-action:active,
+ .btn-action:not(:disabled):not(.disabled).active, 
+ .btn-action:not(:disabled):not(.disabled):active,
+ .btn-action-secondary:hover,
+ .btn-action-secondary:focus,
+ .btn-action-secondary:active,
+ .btn-action-secondary:not(:disabled):not(.disabled).active, 
+ .btn-action-secondary:not(:disabled):not(.disabled):active {
+   color: #f8f8f8;
+   background-color: #555;;
+   border-color: #555;
+   outline: none;
+ }
+  */
+
+/* .btn-lg {
+    padding: 0.5rem 2rem;
+    font-weight: 400;
+  } */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/*
+   * Base structure
+   */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  width: 70%;
+}
+
+
+/* Common elements */
+
+/* .cover-container {
+  max-width: 48em;
+} */
+
+
+/*
+ Nav
+*/
+
+header {
+  margin-top: 0.5em;
+}
+
+.nav-icons {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.nav-icons > .nav-icon {
+  margin: 0 0.5em;
+  line-height: 2em;
+  font-size: 1.25em;
+}

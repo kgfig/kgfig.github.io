@@ -6,55 +6,62 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kathleen Figueroa | Full-stack Software Developer</title>
+    <title>Kathleen Figueroa | Full-stack Software Developer | Django, Javascript Developer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" 
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-          crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/vendor/custom-bootstrap.css">
+    <link rel="stylesheet" href="css/2021/globals.css">
+    <link rel="stylesheet" href="css/2021/home.css">
   </head>
-  <body class="">
+  <body class="clearfix d-flex flex-column w-100 h-100" onload="onLoad()">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-          <div class="inner">
-            <h3 class="masthead-brand text-center">
-                <a class="nav-icon" target="_blank" href="mailto:kgfig.work@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a class="nav-icon" target="_blank" href="https://gitlab.com/kgfig/"><i class="fab fa-gitlab"></i></a>
-                <a class="nav-icon" target="_blank" href="https://linkedin.com/in/kathleen-figueroa/"><i class="fab fa-linkedin"></i></a>
-            </h3>
-            <nav class="nav nav-masthead justify-content-center">
-              <a class="nav-link active" href="index.html">Home</a>
-              <a class="nav-link" href="projects.html">Projects</a>
-              <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
-          </div>
-        </header>
-      
-        <main role="main" class="inner cover mb-auto">
-          <h1 class="cover-heading">Kathleen Figueroa</h1>
-          <p class="lead">Full-stack Software Developer</p>
-          <p class="lead">
-            <a href="projects.html" class="btn btn-lg btn-primary mr-4">View projects</a>
-            <a target="_blank" href="https://app.box.com/s/ngyc4hiqv7moiodsdz57udr3wh3lf9d2" class="btn btn-lg btn-secondary">View resume</a>
-          </p>
-        </main>
-      
-        <footer class="mx-auto">
-          <div class="inner">
-            &copy; 2019
-          </div>
-        </footer>
+    <header class="mb-auto">
+      <nav class="nav">
+        <a class="nav-link nav-brand font-weight-bold" href="">Kathleen Figueroa</a>
+        <a class="nav-link" href="">CV</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+        <div class="nav-icons ml-auto">
+          <a class="nav-icon" target="_blank" href="https://linkedin.com/in/kathleen-figueroa/"><i class="fab fa-linkedin" title="LinkedIn Profile"></i></a>
+          <a class="nav-icon" target="_blank" href="https://gitlab.com/kgfig/"><i class="fab fa-gitlab" title="Gitlab repositories"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <img src="images/home-mono.png">
+      <div class="lead">
+        <h2>Hi! I build apps for learners.</h2>
+        <p class="text-info mt-4">I'm Kathleen Figueroa, a full-stack software developer<br>with a background in research and educational apps.</p>
+
+        <a target="_blank" href="https://app.box.com/s/ngyc4hiqv7moiodsdz57udr3wh3lf9d2" class="btn btn-lg btn-danger">Download CV</a>
       </div>
-    
+    </main>
+
+    <footer class="mt-auto d-flex flex-row">
+      <div class="text-info text-center">
+        &copy; <span id="copyright-year"></span>
+      </div>
+      <!--<span class="text-warning">Original illustrations by drawkit.io</span> -->
+    </footer>
+
     
     <script src="https://kit.fontawesome.com/7379c566a8.js"></script>
+    <script>
+      const onLoad = function () {
+        const $year = document.getElementById("copyright-year");
+        $year.innerHTML = getCurrentYear();
+      };
+
+      const getCurrentYear = function() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      };
+    </script>
   </body>
 </html>
