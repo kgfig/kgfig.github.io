@@ -92,73 +92,6 @@ a.btn-danger:not(:disabled):not(.disabled):active,
   color: #aaaaaa !important;
 }
 
- /*
- .btn-primary:hover,
- .btn-primary:focus,
- .btn-primary:active,
- .btn-primary:not(:disabled):not(.disabled).active, 
- .btn-primary:not(:disabled):not(.disabled):active,
- .btn-secondary:hover,
- .btn-secondary:focus,
- .btn-secondary:active,
- .btn-secondary:not(:disabled):not(.disabled).active, 
- .btn-secondary:not(:disabled):not(.disabled):active {
-   color: #f8f8f8;
-   background-color: #df8235;
-   border-color: transparent;
- }
- 
- .btn-secondary {
-   color: #df8235;
-   background-color: transparent;
-   border: .05rem solid #df8235;
- } */
-
-/* .btn-secondary:hover,
- .btn-secondary:focus,
- .btn-secondary:active,
- .btn-secondary:not(:disabled):not(.disabled).active, 
- .btn-secondary:not(:disabled):not(.disabled):active {
-   color: #555;
-   background-color: transparent;
-   border-color: #555;
- } */
-
-/* .btn-action {
-   color: #f8f8f8;
-   background-color: #df8235;
-   border: .05rem solid #df8235;
-   outline: none;
- }
- 
- .btn-action-secondary {
-   color: #f8f8f8;
-   background-color: #888;
-   border: .05rem solid #888;
- }
- 
- .btn-action:hover,
- .btn-action:focus,
- .btn-action:active,
- .btn-action:not(:disabled):not(.disabled).active, 
- .btn-action:not(:disabled):not(.disabled):active,
- .btn-action-secondary:hover,
- .btn-action-secondary:focus,
- .btn-action-secondary:active,
- .btn-action-secondary:not(:disabled):not(.disabled).active, 
- .btn-action-secondary:not(:disabled):not(.disabled):active {
-   color: #f8f8f8;
-   background-color: #555;;
-   border-color: #555;
-   outline: none;
- }
-  */
-
-/* .btn-lg {
-    padding: 0.5rem 2rem;
-    font-weight: 400;
-  } */
-
 h1,
 h2,
 h3,
@@ -279,4 +212,42 @@ footer .el-credit {
   right: 0;
   margin-right: 2em;
   color: #d0d0d0;
+}
+
+@media screen and (max-width: 1010px) {
+  header,
+  main,
+  footer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+    h1 {
+    font-size: 1.2em;
+  }
+  .text-info {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header,
+  main,
+  footer {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+  .text-info {
+    font-size: 0.8em;
+  }
+  .lead {
+    margin-left: 0;
+  }  
+  footer {
+    font-size: 0.5em;
+  }
 }
