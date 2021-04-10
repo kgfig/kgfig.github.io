@@ -18,6 +18,10 @@ main img.img-icon {
   display: none;
 }
 
+.lead.alt-layout {
+  text-align: right;
+}
+
 @media screen and (max-width: 720px) {
   main {
     flex-direction: column;
@@ -39,15 +43,9 @@ main img.img-icon {
   main .el-small-screen-desc {
     display: block;
   }
-}
 
-/* .cover {
-    padding: 1rem;
+  .lead.alt-layout {
+    text-align: center;
   }
   
-  @media (max-width: 508px) {
-    .btn {
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-  } */
+}
