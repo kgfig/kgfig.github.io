@@ -28,28 +28,78 @@
       </p>
     <![endif]-->
 
-    <header class="mb-auto">
-      <nav class="nav">
-        <a class="nav-link nav-brand font-weight-bold" href="index.html"
-          >Kathleen Figueroa</a
-        >
-        <a class="nav-link" href="cv.html">View CV</a>
-        <a class="nav-link" href="projects.html">Projects</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+<nav class="nav w-100">
+      <header>
+        <div class="nav-full">
+          <a class="nav-link navbar-brand" href="index.html"
+            >Kathleen Figueroa</a
+          >
+          <a class="nav-link" href="cv.html">View CV</a>
+          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="contact.html">Contact</a>
 
-        <div class="nav-icons ml-auto">
-          <a
-            class="nav-icon"
-            target="_blank"
-            href="https://linkedin.com/in/kathleen-figueroa/"
-            ><i class="fab fa-linkedin" title="LinkedIn Profile"></i
-          ></a>
-          <a class="nav-icon" target="_blank" href="https://gitlab.com/kgfig/"
-            ><i class="fab fa-gitlab" title="Gitlab repositories"></i
-          ></a>
+          <div class="nav-icons ml-auto">
+            <a
+              class="nav-icon"
+              target="_blank"
+              href="https://linkedin.com/in/kathleen-figueroa/"
+            >
+              <i class="fab fa-linkedin" title="LinkedIn Profile"></i>
+            </a>
+            <!-- <a class="nav-icon" target="_blank" href="https://gitlab.com/kgfig/"
+              ><i
+                class="fab fa-gitlab"
+                title="Gitlab repositories"
+                aria-hidden="true"
+              ></i
+              ><span class="sr-only">Gitlab repositories</span></a
+            > -->
+          </div>
         </div>
-      </nav>
-    </header>
+
+        <div class="nav-collapsible">
+          <div class="nav-top">
+            <a class="nav-link navbar-brand" href="index.html"
+              >Kathleen Figueroa</a
+            >
+            <button
+              class="navbar-toggler ml-auto"
+              type="button"
+              onclick="toggleCollapsibleNav()"
+            >
+              <span class="navbar-toggle-icon"></span>
+            </button>
+          </div>
+          <div id="nav-collapse">
+            <div><a class="nav-link" href="cv.html">View CV</a></div>
+            <div>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                onclick="toggleDropdown()"
+                >Projects</a
+              >
+              <div id="dropdown-list" class="dropdown-list">
+                <div>
+                  <a class="nav-link" href="project-marayum.html"
+                    >Project Marayum</a
+                  >
+                </div>
+                <div>
+                  <a class="nav-link" href="tocky-talk.html">Tocky Talk</a>
+                </div>
+                <div>
+                  <a class="nav-link" href="click-impact.html"
+                    >CLICK &amp; IMPACT</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div><a class="nav-link" href="contact.html">Contact</a></div>
+          </div>
+        </div>
+      </header>
+    </nav>
 
     <main>
       <h1>Latest Projects</h1>
@@ -87,5 +137,6 @@
     </main>
 
     <script src="https://kit.fontawesome.com/7379c566a8.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body>
 </html>

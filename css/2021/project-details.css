@@ -1,18 +1,19 @@
- main {
+main {
     width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-  }
+    margin: 0 0 2.5em;
+}
   
 main .text-info {
     font-size: 1em;
 }
 
 main h1 {
-    margin: 1.25em 0;
+    margin: 0 0 1.8em;
 }
 
 main h2 {
@@ -21,4 +22,18 @@ main h2 {
 
 main .btn {
     margin: 1.25em 0 2em;
+}
+
+@media screen and (max-width: 790px) {
+    main {
+        margin-top: 2em;
+    }
+
+    main .links {
+        display: none;
+    }
+
+    main .el-description {
+        margin-top: 2.5rem;
+    }
 }

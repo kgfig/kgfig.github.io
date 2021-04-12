@@ -3,6 +3,7 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: top;
+  margin: 4em 0;
 }
 
 main img {
@@ -22,7 +23,7 @@ main img.img-icon {
   text-align: right;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 790px) {
   main {
     flex-direction: column;
     justify-content: center;
