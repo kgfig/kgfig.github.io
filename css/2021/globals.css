@@ -16,6 +16,7 @@
  a.nav-link {
    padding: 0.5em 1.5em;
    margin: 0.5em;
+   font-size: 1em;
  }
  
  a.navbar-brand,
@@ -25,7 +26,7 @@
    color: #cc7621;
    background: none;
    font-weight: 700;
-   font-size: 1rem;
+   font-size: 1em;
  }
  
  a.nav-icon:hover,
@@ -138,11 +139,11 @@ body {
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-size: 12pt;
 }
 
 body {
   background-color: #f5f5f5;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,8 +151,7 @@ body {
 }
 
 header,
-main,
-footer {
+main {
   width: 70%;
 }
 
@@ -161,6 +161,19 @@ header {
 
 /* Nav */
 
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  margin: 0;
+}
+
 nav ul {
   list-style-type: none;
 }
@@ -169,8 +182,6 @@ nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
-  margin: 0 auto 2.5em;
 }
 
 .nav-icons {
@@ -202,7 +213,18 @@ nav .dropdown-toggle:after {
   display: none;
 }
 
+.nav-collapsible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f5f5f5;
+  z-index: 100;
+  box-shadow: 0 0 4px 0 #3f3f3f55;
+}
+
 .nav-collapsible > .nav-top {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -239,7 +261,7 @@ nav .dropdown-toggle:after {
 .lead h2,
 .lead h3,
 .lead h4 {
-  margin-top: 0.7em;
+  margin-top: 1em;
 }
 
 .lead .btn {
@@ -252,11 +274,16 @@ nav .dropdown-toggle:after {
 }
 
 footer {
-  padding: 1.2em 4em;
-} 
+  width: 100%;
+  height: 2em;
+  padding: 0 2em;
+  margin: auto;
+  text-align: center;
+}
 
-footer >  div:first-child {
-  flex: 1;
+footer > div:first-child {
+  width: 100%;
+  text-align: center;
 }
 
 footer .text-info {
@@ -264,33 +291,44 @@ footer .text-info {
 }
 
 footer .el-credit {
-  /* position: absolute;
-  right: 0; */
-  margin-right: 2em;
+  font-size: 0.8rem;
   color: #d0d0d0;
+  position: absolute;
+  right: 2em;
+  bottom: 1em;
+  vertical-align: middle;
 }
 
-@media screen and (max-width: 1040px) {
-  header,
-  main,
+@media screen and (min-width: 910px) {
   footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }    
+}
+
+@media screen and (min-height: 1024px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  header,
+  main {
     width: 90%;
   }
-}
 
-@media screen and (max-width: 970px) {
-  h1,
-  h2 {
-    font-size: 1.2em;
-  }
   .text-info {
     font-size: 0.8em;
   }
 }
 
-@media screen and (max-width: 790px) {
-  main,
-  footer {
+@media screen and (max-width: 910px) {
+  main {
     width: 90%;
   }
 
@@ -350,4 +388,37 @@ footer .el-credit {
   .lead {
     margin-left: 0;
   }
+
+  footer {
+    height: 6em;
+  }
+
+  footer .el-credit {
+    display: block;
+    position: relative;
+    margin-top: 1.2em;
+    text-align: center;
+    right: 0;
+  }  
+}
+
+@media screen and (min-width: 1900px) {
+  html,
+  body {
+    font-size: 16pt;
+    font-weight: 400;
+  }
+  nav a.nav-link,
+  nav a.navbar-brand {
+    font-size: 1.2em;
+  }
+  nav .nav-icons > .nav-icon {
+    line-height: 2.5em;
+    font-size: 2em;
+  }
+
+  nav {
+    height: 6em;
+  }
+
 }

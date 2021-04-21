@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/vendor/custom-bootstrap.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/2021/globals.css" />
     <link rel="stylesheet" href="css/2021/home.css" />
   </head>
@@ -27,7 +28,7 @@
       </p>
     <![endif]-->
 
-    <nav class="nav w-100">
+    <nav>
       <header>
         <div class="nav-full">
           <a class="nav-link navbar-brand" href="index.html"
@@ -101,7 +102,7 @@
     </nav>
 
     <main>
-      <img src="images/home-mono.png" class="img-fluid img-main" />
+      <img src="images/home-mono.png" class="img-main" alt="An illustration of a woman sitting on a stool and typing on her laptop"/>
       <img src="images/home-icon.png" class="img-fluid img-icon" />
       <div class="lead">
         <h1>Hi! I build apps for learners.</h1>
@@ -116,20 +117,20 @@
         <div class="button-container">
           <a href="cv.html" class="btn btn-danger">View CV</a>
         </div>
-      </div>
+      </div>        
     </main>
 
-    <!-- <footer class="mt-auto">
-      <div class="text-info text-center">
-        &copy; <span id="copyright-year"></span>
-        <span class="el-credit">Original illustrations by drawkit.io</span>
+    <footer>
+      <div class="text-info">
+        &copy; Copyright <span id="copyright-year"></span>
       </div>
-    </footer> -->
+      <span class="el-credit">Original illustrations by drawkit.io</span>
+    </footer>
 
     <script src="https://kit.fontawesome.com/7379c566a8.js"></script>
     <script>
       const onLoad = function () {
-        // showCurrentYear()
+        showCurrentYear()
       };
 
       const showCurrentYear = function () {
