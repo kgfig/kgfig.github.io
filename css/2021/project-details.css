@@ -5,7 +5,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 0 2.5em;
+    margin: 6.5em auto 2.5em;
 }
   
 main .text-info {
@@ -25,10 +25,7 @@ main .btn {
 }
 
 @media screen and (max-width: 790px) {
-    main {
-        margin-top: 2em;
-    }
-
+    
     main .links {
         display: none;
     }
